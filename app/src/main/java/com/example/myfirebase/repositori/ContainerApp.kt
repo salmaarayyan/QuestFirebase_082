@@ -3,11 +3,11 @@ package com.example.myfirebase.repositori
 import android.app.Application
 
 interface ContainerApp {
-    val repositoriSiswa: RepositorySiswa
+    val repositorySiswa: RepositorySiswa
 }
 
 class DefaultContainerApp : ContainerApp {
-    override val repositoriSiswa: RepositorySiswa by lazy {
+    override val repositorySiswa: RepositorySiswa by lazy {
         FirebaseRepositorySiswa()
     }
 }
