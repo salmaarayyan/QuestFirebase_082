@@ -2,8 +2,8 @@
   <h2>Aplikasi Manajemen Data Siswa</h2>
   <table>
     <tr>
-      <td align="center"><b>Tampilan Form Tambah</b></td>
       <td align="center"><b>Tampilan Dashboard</b></td>
+      <td align="center"><b>Tampilan Form Tambah</b></td>
     </tr>
     <tr>
       <td><img src="https://github.com/user-attachments/assets/b1bc8806-af12-49d8-acf7-7763f0017d30" width="200"/></td>
