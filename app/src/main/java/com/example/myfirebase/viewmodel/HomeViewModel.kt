@@ -1,6 +1,5 @@
 package com.example.myfirebase.viewmodel
 
-import android.net.http.HttpException
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -32,7 +31,7 @@ class HomeViewModel(private val repositoriSiswa: RepositorySiswa) : ViewModel() 
                 StatusUiSiswa.Success(repositoriSiswa.getDataSiswa())
             } catch (e: IOException) {
                 StatusUiSiswa.Error
-            } catch (e: HttpException) {
+            } catch (e: Exception) {
                 StatusUiSiswa.Error
             }
         }
