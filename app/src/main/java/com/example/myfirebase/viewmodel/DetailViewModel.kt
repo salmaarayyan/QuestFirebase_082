@@ -3,6 +3,9 @@ package com.example.myfirebase.viewmodel
 
 import com.example.myfirebase.modeldata.Siswa
 import kotlinx.serialization.InternalSerializationApi
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.ViewModel
+import com.example.myfirebase.repositori.RepositorySiswa
 
 
 sealed interface StatusUIDetail {
@@ -11,3 +14,9 @@ sealed interface StatusUIDetail {
     object Loading : StatusUIDetail
 }
 
+class DetailViewModel(
+    savedStateHandle: SavedStateHandle,
+    private val repositorySiswa: RepositorySiswa
+) : ViewModel() {
+
+}
