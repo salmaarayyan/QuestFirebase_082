@@ -103,14 +103,14 @@ private fun BodyDetailSiswa(
     ) {
         var deleteConfirmationRequired by rememberSaveable { mutableStateOf(false) }
         when (statusUIDetail) {
-            is StatusUIDetail.Success -> {
-                ItemDetailSiswa(
+            is StatusUIDetail.Success ->
+                DetailDataSiswa(
                     siswa = statusUIDetail.satusiswa,
                     modifier = Modifier.fillMaxWidth()
                 )
-            }
             else -> {}
         }
+
         OutlinedButton(
             onClick = { deleteConfirmationRequired = true },
             shape = MaterialTheme.shapes.small,
